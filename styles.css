@@ -1,0 +1,357 @@
+@font-face {
+    font-family: "VampyresGarden";
+    src: url("../fonts/VAMPG___.TTF");
+    /* https://www.fontspace.com/the-black-box/vampyres-garden */
+}
+.bookletter {
+    font-family: "VampyresGarden";
+    font-size: 100px;
+    font-weight: normal;
+}
+body {
+    background-color: #f0e8e0;
+    background-image: url(../images/bg/birds.gif);
+    background-attachment: fixed;
+    font-family: Geneva, Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+#home {
+    background-color: #e5e4ec;
+    background-image: url(../images/bg/spiral.png);
+    background-size: 15em;
+}
+#story {
+    background-color: #ebebeb;
+    background-image: url(../images/bg/petals.jpg);
+    background-size: 20em;
+}
+#sidebar {
+    position:fixed;
+    height: 100vh;
+    min-height: 465px;
+}
+#logo {
+    text-decoration: none;
+}
+#logo div {
+    padding: 1em;
+    margin: 1em 0 0 1em;
+    background-color: #383535;
+    color:#ffffff;
+}
+#logo .title {
+    /* font-family: 'UnifrakturMaguntia', 'IM Fell DW Pica', cursive;
+    font-size: 26pt; */
+    margin:0;
+    padding-left:0.12em;
+    font-family:"VampyresGarden", cursive, arial;
+    font-style: normal;
+    font-size: 125px;
+    color:#383535;
+    background-color: #ffffff;
+}
+#logo:hover div {
+    background-color: #6d655e;
+}
+#logo:hover .title {
+    color:#6d655e;
+    background-color: #ffffff;
+}
+nav {
+    width:200px;
+    margin-top: 1em;
+}
+nav a {
+    color:#000000;
+    text-decoration: none;
+    display: block;
+    padding:0.55em;
+}
+nav ul {
+    list-style: none;
+    padding-left: 1em;
+    margin:0;
+}
+nav ul li {
+    position: relative; /***/
+    background-color: #a1988e;
+    border-bottom: 1px solid #f0e8e0;
+    cursor:pointer;
+}
+nav ul li:last-child {
+    border-bottom: none;
+}
+nav ul li:hover {
+    background-color: #6d655e;
+    color:white;
+}
+nav ul li ul {
+    display: none; /***/
+    position: absolute; /***/
+    left:100%; /***/
+    top:0px; /***/
+    width:250px;
+    padding-left:0;
+}
+nav ul li:hover .first-subnav, nav ul li ul li:hover .second-subnav {
+    display:block; 
+}
+nav ul li:hover a {
+    color:#ffffff;
+}
+nav ul li:hover ul li a {
+    color:#000000;
+}
+nav ul li ul li:hover a {
+    color:#ffffff;
+}
+nav ul li ul li:hover ul li a {
+    color:#000000;
+}
+nav ul li ul li ul li:hover a {
+    color:#ffffff;
+}
+a:link, a:visited {
+    color:#6d655e;
+}
+a:hover, a:active {
+    text-decoration: none;
+    background-color: #6d655e;
+    color:#ffffff;
+}
+footer {
+    background-color: #383535;
+    color:#ffffff;
+    text-align: center;
+    font-size: 10pt;
+    width:170px;
+    padding:0.6em;
+    margin: 1em;
+    position: absolute;
+    bottom: 0;
+}
+footer a:link, footer a:visited {
+    font-size: 20pt;
+    background-color: unset;
+    color:#ffffff;
+}
+footer a:hover, footer a:active {
+    color:#a1988e;
+}
+.content {
+    float:right;
+    width:80%;
+}
+
+/* HOME PAGE CONTENT */
+.content #map {
+    width:75%;
+    position: relative;
+    z-index: -1000;
+    top:0;
+    left:0;
+}
+.content .banner {
+    position: absolute;
+    top:0%;
+    right:5%;
+    font-size: 50pt;
+    font-family:'Charmonman', 'IM Fell DW Pica', Georgia, serif;
+    font-style: italic;
+    width:450px;
+    text-align: center;
+    cursor: default;
+}
+#wrapper {
+    width:67%;
+}
+.italic {
+    font-style: italic;
+}
+
+/* RELATED LINKS */
+#related {
+    margin-top: 0.5em;
+}
+#related .explore {
+    background-color: #383535;
+    color:#f0e8e0;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding:0.5em;
+    margin:0.2em 0;
+    display: inline-block;
+}
+#related a {
+    text-decoration: none;
+    background-color: #a1988e;
+    color:#000000;
+    padding:0.5em;
+    margin:0.2em;
+    display: inline-block;
+    text-align: center;
+}
+#related a:hover, #related a:active {
+    background-color: #6d655e;
+    color:#ffffff;
+}
+
+/* CHARACTER SHEET CONTENT */
+.character {
+    padding:1.5em 0; 
+    background-color: #ffffff;
+}
+.character > * {
+    padding:0 1.5em;
+}
+.subcontent {
+    border-top: 2px groove #a1988e;
+}
+.character h1 {
+    font-family:'IM Fell DW Pica', cursive, serif;
+    font-weight: normal;
+    font-size: 3em;
+    /* text-align: center; */
+    line-height: 1em;
+    padding-left: 0.5em;
+}
+.subheading {
+    margin-bottom: 0;
+    padding-left: 1em;
+}
+.char-sheet {
+    width:28%;
+    margin:1em 1.5em 0 1.5em;
+    float: right;
+    position: relative;
+    /* z-index: 1; */
+} 
+.char-sheet img {
+    width:100%;
+}
+.char-sheet .caption {
+    background-color: #6d655e;
+    color:#ffffff;
+    font-size: 8pt;
+    text-align: center;
+    padding: 0.5em;
+    margin-top:-0.5em;
+}
+.caption a:link, .caption a:visited {
+    color:#ffffff;
+}
+.char-sheet .notes {
+    margin:1em 0;
+}
+.char-sheet table {
+    background-color: white;
+    font-size: 10pt;
+    text-align: left;
+    width:100%;
+    padding: 0.5em 0.5em 0 0.5em;
+}
+.char-sheet th {
+    vertical-align: top;
+}
+.char-sheet th, .char-sheet td {
+    padding-bottom: 0.5em;
+}
+
+/* image cycle */
+.container {
+    position: relative;
+    /* z-index: 5; */
+}
+#next, #prev {
+    color:#ffffff;
+    position: absolute;
+    top: 10%;
+    right:0;
+    font-size: 2em;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 5;
+}
+#prev {
+    left:0;
+}
+#next:hover, #prev:hover {
+    opacity: 0.9;
+}
+
+/* light box */
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    margin:auto;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom:0;
+    left:0;
+    z-index: 15;
+}
+#lightbox p {
+    z-index: 15;
+    position: fixed;
+    width: 30%;
+    bottom:0.5em;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: #6d655e;
+    color:#ffffff;
+    font-size: 10pt;
+    text-align: center;
+    padding: 0.5em;
+}
+#curtain {
+    background-color: #000;
+    opacity: 0.8;
+    position:fixed;
+    top:0;
+    left: 0;
+    height:100%;
+    width:100%;
+    z-index: 10;
+}
+
+/*---------- MEDIA QUERIES ------------*/
+@media(max-width:1050px) {
+    .content {
+        float:none;
+        width:800px;
+        margin:0 auto;
+    }
+    #wrapper {
+        width:100%;
+    }
+    .char-sheet {
+        display:none;
+    }
+    #sidebar {
+        display:none;
+    }
+}
+@media(max-width:800px) {
+    .content {
+        width:600px;
+    }
+}
+@media(max-width:600px) {
+    .content {
+        width:500px;
+    }
+    .character h1 {
+        font-size: 2em;
+        line-height: 1.5em;
+        padding-left: 0em;
+        text-align:center;
+    }
+}
+@media(max-width:500px) {
+    .content {
+        width:400px;
+    }
+}
