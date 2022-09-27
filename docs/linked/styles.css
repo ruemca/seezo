@@ -10,7 +10,7 @@
 }
 body {
     background-color: #f0e8e0;
-    background-image: url(../images/bg/birds.gif);
+    background-image: url(../images/backgrounds/birds.gif);
     background-attachment: fixed;
     font-family: Geneva, Arial, sans-serif;
     margin:0;
@@ -18,12 +18,12 @@ body {
 }
 #home {
     background-color: #e5e4ec;
-    background-image: url(../images/bg/spiral.png);
+    background-image: url(../images/backgrounds/spiral.png);
     background-size: 15em;
 }
 #story {
     background-color: #ebebeb;
-    background-image: url(../images/bg/petals.jpg);
+    background-image: url(../images/backgrounds/petals.jpg);
     background-size: 20em;
 }
 #sidebar {
